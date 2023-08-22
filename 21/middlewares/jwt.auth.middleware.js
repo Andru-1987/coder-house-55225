@@ -6,7 +6,7 @@ const jwtVerifyAuthToken = (req, res, next) => {
      * Se toma de los headers
      */
     const authHeader = req.headers.authorization;
-    s;
+
     if (!authHeader) {
         res.status(401).send({ status: "error", error: "not authenticated" });
         return;

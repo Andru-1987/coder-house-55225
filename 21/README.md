@@ -32,6 +32,9 @@ JWT
 -   [Info adicional de lo que es un JWT](https://jwt.io/introduction)
 -   [JWT NODEJS](https://bluuweb.github.io/node/07-jwt/#jwt-2)
 
+-   Creacion de middlewares
+-   Creacion de generador de Token utils/generate.token.js
+
 ---
 
 Partes que se agregaron del proyecto:
@@ -43,4 +46,19 @@ Partes que se agregaron del proyecto:
 
 Middleware
 
--   auth.middleware.js (me permite usar como metodo de validacion de token)
+-   jwt.auth.middleware.js (me permite usar como metodo de validacion de token)
+-   utils/generate.token.js (Tokens)
+
+FrontEnd
+
+-   Modificacion de la forma de entrada a github
+
+Login
+- login.router.js >> Github trigger && callback url
+
+Index
+- index.js >> modificacion para poder usar JWT
+
+Routing
+- JWT routes para tokens
+
